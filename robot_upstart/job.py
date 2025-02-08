@@ -124,6 +124,8 @@ class Job(object):
         # startup job itself. List of strs.
         self.files = []
 
+        self.team_number =  os.environ('FRC_TEAM_NUMBER')
+
     def add(self, package=None, filename=None, glob=None):
         """ Add launch or other configuration files to Job.
 

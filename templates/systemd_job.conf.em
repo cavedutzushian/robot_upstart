@@ -33,6 +33,7 @@ After=@(systemd_after)
 
 [Service]
 Type=simple
+Environment="FRC_TEAM_NUMBER=:@(team_number)"
 ExecStart=/usr/sbin/@(name)-start
 
 [Install]
